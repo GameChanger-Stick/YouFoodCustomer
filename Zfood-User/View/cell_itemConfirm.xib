@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_itemConfirm" rowHeight="29" id="KGk-i7-Jjw" customClass="cell_itemConfirm" customModule="Zfood_User" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="28.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssY-iE-EZI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="28.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ginger Chicken Curry (5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbD-QQ-B9z">
+                                <rect key="frame" x="10" y="2" width="210" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URp-4E-0mt">
+                                <rect key="frame" x="240" y="0.0" width="60" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1Ul-30-Wcc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kbD-QQ-B9z" firstAttribute="centerY" secondItem="ssY-iE-EZI" secondAttribute="centerY" id="1FM-DI-aLa"/>
+                            <constraint firstItem="URp-4E-0mt" firstAttribute="leading" secondItem="kbD-QQ-B9z" secondAttribute="trailing" constant="20" id="8vH-lu-hm6"/>
+                            <constraint firstItem="kbD-QQ-B9z" firstAttribute="top" secondItem="ssY-iE-EZI" secondAttribute="top" constant="2" id="ENA-l3-gDu"/>
+                            <constraint firstAttribute="bottom" secondItem="kbD-QQ-B9z" secondAttribute="bottom" constant="2" id="HNh-am-gbg"/>
+                            <constraint firstItem="URp-4E-0mt" firstAttribute="top" secondItem="ssY-iE-EZI" secondAttribute="top" id="IPj-kp-0Gf"/>
+                            <constraint firstAttribute="trailing" secondItem="URp-4E-0mt" secondAttribute="trailing" constant="20" id="Kzb-va-I2l"/>
+                            <constraint firstItem="URp-4E-0mt" firstAttribute="centerY" secondItem="kbD-QQ-B9z" secondAttribute="centerY" id="le2-fB-Lgs"/>
+                            <constraint firstAttribute="bottom" secondItem="URp-4E-0mt" secondAttribute="bottom" id="q7j-G4-xnA"/>
+                            <constraint firstItem="kbD-QQ-B9z" firstAttribute="leading" secondItem="ssY-iE-EZI" secondAttribute="leading" constant="10" id="qaH-58-0FJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ssY-iE-EZI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6rW-Fi-r3j"/>
+                    <constraint firstAttribute="bottom" secondItem="ssY-iE-EZI" secondAttribute="bottom" id="7u4-Zg-ZZw"/>
+                    <constraint firstAttribute="trailing" secondItem="ssY-iE-EZI" secondAttribute="trailing" id="GV0-Wr-zbK"/>
+                    <constraint firstItem="ssY-iE-EZI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="poy-x2-D1D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblNameCount" destination="kbD-QQ-B9z" id="ZXc-be-65P"/>
+                <outlet property="lblPrice" destination="URp-4E-0mt" id="laI-kZ-Vql"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="129.98500749625188"/>
+        </tableViewCell>
+    </objects>
+</document>

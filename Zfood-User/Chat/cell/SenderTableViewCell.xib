@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderTableViewCell" rowHeight="104" id="88s-Dv-E0J" customClass="SenderTableViewCell" customModule="Zfood_User" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88s-Dv-E0J" id="ggb-ie-a0R">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="just now" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-6l-OA4">
+                        <rect key="frame" x="234" y="39" width="50" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTF-GB-s7l" customClass="PaddingLabel" customModule="Zfood_User" customModuleProvider="target">
+                        <rect key="frame" x="246" y="11" width="43" height="26"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BV.png" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-ru-oaA">
+                        <rect key="frame" x="289" y="27" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="SK8-5C-Wla"/>
+                            <constraint firstAttribute="width" constant="10" id="xDs-0P-skV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="OTF-GB-s7l" firstAttribute="top" secondItem="ggb-ie-a0R" secondAttribute="topMargin" id="3KX-hT-WeT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6yG-6l-OA4" secondAttribute="trailing" constant="20" id="6oM-HC-KzZ"/>
+                    <constraint firstItem="6yG-6l-OA4" firstAttribute="bottom" secondItem="ggb-ie-a0R" secondAttribute="bottomMargin" id="7tB-Hf-kM1"/>
+                    <constraint firstItem="wVq-ru-oaA" firstAttribute="bottom" secondItem="OTF-GB-s7l" secondAttribute="bottom" id="9ZN-b1-JOj"/>
+                    <constraint firstItem="OTF-GB-s7l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ggb-ie-a0R" secondAttribute="leadingMargin" constant="100" id="Ap4-IU-VRA"/>
+                    <constraint firstItem="6yG-6l-OA4" firstAttribute="leading" secondItem="ggb-ie-a0R" secondAttribute="leadingMargin" constant="218" id="DJT-ut-vnz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OTF-GB-s7l" secondAttribute="trailing" constant="15" id="K9w-88-Kjy"/>
+                    <constraint firstItem="wVq-ru-oaA" firstAttribute="leading" secondItem="OTF-GB-s7l" secondAttribute="trailing" id="Qxi-ZE-UGZ"/>
+                    <constraint firstItem="6yG-6l-OA4" firstAttribute="top" secondItem="OTF-GB-s7l" secondAttribute="bottom" constant="2" id="tZT-cR-5vd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="tWG-uv-6jH"/>
+            <connections>
+                <outlet property="lblMsgSender" destination="OTF-GB-s7l" id="PZe-6g-lKp"/>
+                <outlet property="lbltime" destination="6yG-6l-OA4" id="89t-WE-RuI"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="107.94602698650675"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BV.png" width="16" height="16"/>
+    </resources>
+</document>

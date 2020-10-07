@@ -1,0 +1,6 @@
+framework module Pods_Zfood_UserTests {
+  umbrella header "Pods-Zfood-UserTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

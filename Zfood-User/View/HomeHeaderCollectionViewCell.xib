@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeHeaderCollectionViewCell" id="gTV-IL-0wX" customClass="HomeHeaderCollectionViewCell" customModule="Zfood_User" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlh-t5-KTp">
+                        <rect key="frame" x="0.0" y="0.0" width="122" height="110"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9A-FC-ZHZ">
+                                <rect key="frame" x="4" y="4" width="114" height="75.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="otp_background_pic" translatesAutoresizingMaskIntoConstraints="NO" id="ABu-lG-1H3" customClass="UIRoundImageView" customModule="Zfood_User" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="28" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zfo-Hf-iAo"/>
+                                            <constraint firstAttribute="width" secondItem="ABu-lG-1H3" secondAttribute="height" multiplier="1:1" id="n35-e3-m8b"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ABu-lG-1H3" firstAttribute="centerY" secondItem="P9A-FC-ZHZ" secondAttribute="centerY" id="Yg5-3z-D49"/>
+                                    <constraint firstItem="ABu-lG-1H3" firstAttribute="centerX" secondItem="P9A-FC-ZHZ" secondAttribute="centerX" id="zyw-OX-L14"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU7-RM-Q7f">
+                                <rect key="frame" x="35" y="87.5" width="52.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EU7-RM-Q7f" firstAttribute="top" secondItem="P9A-FC-ZHZ" secondAttribute="bottom" constant="8" id="Deb-eL-5Gu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EU7-RM-Q7f" secondAttribute="trailing" id="P62-rR-Vxu"/>
+                            <constraint firstItem="P9A-FC-ZHZ" firstAttribute="top" secondItem="qlh-t5-KTp" secondAttribute="top" constant="4" id="Tr4-Zq-ugB"/>
+                            <constraint firstItem="EU7-RM-Q7f" firstAttribute="centerX" secondItem="P9A-FC-ZHZ" secondAttribute="centerX" id="VqC-0W-b3J"/>
+                            <constraint firstItem="EU7-RM-Q7f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qlh-t5-KTp" secondAttribute="leading" id="ZMo-xm-DBc"/>
+                            <constraint firstAttribute="bottom" secondItem="EU7-RM-Q7f" secondAttribute="bottom" constant="8" id="lUK-RI-ZZt"/>
+                            <constraint firstAttribute="trailing" secondItem="P9A-FC-ZHZ" secondAttribute="trailing" constant="4" id="oY9-v3-Cyp"/>
+                            <constraint firstItem="P9A-FC-ZHZ" firstAttribute="leading" secondItem="qlh-t5-KTp" secondAttribute="leading" constant="4" id="zWa-Xm-Ekd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qlh-t5-KTp" secondAttribute="trailing" id="RBk-Ca-atG"/>
+                <constraint firstItem="qlh-t5-KTp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V0m-56-EP0"/>
+                <constraint firstAttribute="bottom" secondItem="qlh-t5-KTp" secondAttribute="bottom" id="gxg-0G-bAu"/>
+                <constraint firstItem="qlh-t5-KTp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oxY-le-uXY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="122" height="110"/>
+            <connections>
+                <outlet property="foodTypeLabel" destination="EU7-RM-Q7f" id="XE2-lf-gxs"/>
+                <outlet property="foodTypePicImageView" destination="ABu-lG-1H3" id="ywL-TL-jgR"/>
+                <outlet property="mainView" destination="P9A-FC-ZHZ" id="3tz-en-7wE"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="137.6311844077961"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="otp_background_pic" width="2500" height="1667"/>
+    </resources>
+</document>

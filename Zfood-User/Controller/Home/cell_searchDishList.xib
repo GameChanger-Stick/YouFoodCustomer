@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_searchDishList" rowHeight="106" id="KGk-i7-Jjw" customClass="cell_searchDishList" customModule="Zfood_User" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUM-zp-4gp">
+                        <rect key="frame" x="5" y="5" width="310" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Xf-lk-VYl">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="R9T-lc-KV8"/>
+                                    <constraint firstAttribute="width" secondItem="4Xf-lk-VYl" secondAttribute="height" multiplier="1:1" id="uw4-Bv-GIN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGS-kd-wN7">
+                                <rect key="frame" x="65" y="12" width="74" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1t-1A-2NM">
+                                <rect key="frame" x="65" y="35" width="63" height="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqO-lN-8nY">
+                                <rect key="frame" x="65" y="54" width="26.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-wm-3xw">
+                                <rect key="frame" x="256.5" y="76.5" width="48.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.27833867070000001" green="0.59346991780000002" blue="0.048431806270000002" alpha="0.96751926369999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmk-Eb-nz2">
+                                <rect key="frame" x="279" y="12" width="26" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOD-qc-DoG">
+                                <rect key="frame" x="1" y="1" width="308" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="0.68410209760273977" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rmk-Eb-nz2" secondAttribute="trailing" constant="5" id="2p0-ca-2TE"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kqO-lN-8nY" secondAttribute="bottom" constant="5" id="39g-8n-qKw"/>
+                            <constraint firstItem="RzW-wm-3xw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rmk-Eb-nz2" secondAttribute="bottom" constant="19" id="4Ei-Vc-hpg"/>
+                            <constraint firstItem="W1t-1A-2NM" firstAttribute="top" secondItem="mGS-kd-wN7" secondAttribute="bottom" constant="5" id="4JD-3Z-BgX"/>
+                            <constraint firstItem="W1t-1A-2NM" firstAttribute="leading" secondItem="mGS-kd-wN7" secondAttribute="leading" id="8hW-h9-m5t"/>
+                            <constraint firstItem="rmk-Eb-nz2" firstAttribute="height" secondItem="mGS-kd-wN7" secondAttribute="height" id="BCp-5Q-eBj"/>
+                            <constraint firstItem="RzW-wm-3xw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kqO-lN-8nY" secondAttribute="trailing" constant="19" id="FOZ-m0-1gx"/>
+                            <constraint firstItem="kqO-lN-8nY" firstAttribute="top" secondItem="W1t-1A-2NM" secondAttribute="bottom" constant="5" id="Fog-09-iet"/>
+                            <constraint firstItem="dOD-qc-DoG" firstAttribute="top" secondItem="qUM-zp-4gp" secondAttribute="top" constant="1" id="JZm-xm-h3T"/>
+                            <constraint firstItem="RzW-wm-3xw" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4Xf-lk-VYl" secondAttribute="trailing" constant="201.5" id="JkX-q3-gWs"/>
+                            <constraint firstAttribute="trailing" secondItem="RzW-wm-3xw" secondAttribute="trailing" constant="5" id="LYt-zv-1Kz"/>
+                            <constraint firstAttribute="bottom" secondItem="dOD-qc-DoG" secondAttribute="bottom" constant="1" id="SgF-T3-NWr"/>
+                            <constraint firstItem="mGS-kd-wN7" firstAttribute="top" secondItem="qUM-zp-4gp" secondAttribute="top" constant="12" id="Svf-X0-Dsv"/>
+                            <constraint firstItem="rmk-Eb-nz2" firstAttribute="centerY" secondItem="mGS-kd-wN7" secondAttribute="centerY" id="Yzn-4K-6SS"/>
+                            <constraint firstAttribute="trailing" secondItem="dOD-qc-DoG" secondAttribute="trailing" constant="1" id="Zhq-0E-7Sm"/>
+                            <constraint firstItem="4Xf-lk-VYl" firstAttribute="leading" secondItem="qUM-zp-4gp" secondAttribute="leading" constant="5" id="aWD-iZ-bh3"/>
+                            <constraint firstItem="mGS-kd-wN7" firstAttribute="leading" secondItem="4Xf-lk-VYl" secondAttribute="trailing" constant="10" id="ebz-Pd-m06"/>
+                            <constraint firstItem="4Xf-lk-VYl" firstAttribute="top" secondItem="qUM-zp-4gp" secondAttribute="top" constant="5" id="grS-Lf-yQi"/>
+                            <constraint firstItem="dOD-qc-DoG" firstAttribute="leading" secondItem="qUM-zp-4gp" secondAttribute="leading" constant="1" id="jpa-aN-A61"/>
+                            <constraint firstItem="kqO-lN-8nY" firstAttribute="leading" secondItem="W1t-1A-2NM" secondAttribute="leading" id="ltH-Gk-1Ro"/>
+                            <constraint firstAttribute="bottom" secondItem="RzW-wm-3xw" secondAttribute="bottom" constant="5" id="rxq-aY-Wix"/>
+                            <constraint firstItem="rmk-Eb-nz2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mGS-kd-wN7" secondAttribute="trailing" constant="19" id="wNK-ac-DOe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qUM-zp-4gp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9j0-0c-VFU"/>
+                    <constraint firstAttribute="trailing" secondItem="qUM-zp-4gp" secondAttribute="trailing" constant="5" id="dDB-JP-nek"/>
+                    <constraint firstAttribute="bottom" secondItem="qUM-zp-4gp" secondAttribute="bottom" constant="5" id="dJh-Pu-XKm"/>
+                    <constraint firstItem="qUM-zp-4gp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="qiG-1P-vua"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="availableStatus" destination="RzW-wm-3xw" id="uWT-A1-phG"/>
+                <outlet property="dishName" destination="mGS-kd-wN7" id="60P-ac-9It"/>
+                <outlet property="imgView" destination="4Xf-lk-VYl" id="xbc-iL-KEh"/>
+                <outlet property="lblChefName" destination="W1t-1A-2NM" id="1Mp-Nc-P9L"/>
+                <outlet property="lblDiscription" destination="kqO-lN-8nY" id="e4f-pA-3dR"/>
+                <outlet property="lblPrice" destination="rmk-Eb-nz2" id="kt7-N3-3SA"/>
+                <outlet property="notAvailableView" destination="dOD-qc-DoG" id="sf0-wM-mFy"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="145.3125"/>
+        </tableViewCell>
+    </objects>
+</document>
